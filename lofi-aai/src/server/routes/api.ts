@@ -103,6 +103,9 @@ type RedditSearchResult = {
   isDirectArtistMention: boolean;
   shouldAnalyzeSentiment: boolean;
   evidenceStrength: 'direct' | 'context';
+  matchedAlias?: string;
+  matchedField?: 'title' | 'body' | 'comment' | 'context';
+  textSnippet: string;
   title: string;
   body: string;
   score?: number;
@@ -110,6 +113,27 @@ type RedditSearchResult = {
   createdAt?: string | number;
   url?: string;
   id?: string;
+  postId?: string;
+  commentId?: string;
+};
+
+type RedditLlmInputItem = {
+  artist: string;
+  subreddit: string;
+  source: 'reddit';
+  type: 'post' | 'comment';
+  matchReason:
+    | 'post_text_matched'
+    | 'comment_text_matched'
+    | 'comment_under_matched_post';
+  evidenceStrength: 'direct' | 'context';
+  matchedAlias?: string;
+  matchedField?: 'title' | 'body' | 'comment' | 'context';
+  text: string;
+  redditScore?: number;
+  redditCommentCount?: number;
+  createdAt?: string | number;
+  url?: string;
   postId?: string;
   commentId?: string;
 };
@@ -154,6 +178,97 @@ function getArtistAliases(artist: string): string[] {
   return Array.from(aliases)
     .map((alias) => alias.trim())
     .filter((alias) => alias.length > 0);
+}
+
+function findMatchedAlias(text: string, artist: string): string | undefined {
+  const textWords = normalizeWords(text);
+  const textCompact = normalizeCompact(text);
+
+  const aliases = getArtistAliases(artist);
+
+  return aliases.find((alias) => {
+    const aliasWords = normalizeWords(alias);
+    const aliasCompact = normalizeCompact(alias);
+
+    return textWords.includes(aliasWords) || textCompact.includes(aliasCompact);
+  });
+}
+
+function detectMatchedField(
+  title: string,
+  body: string,
+  artist: string
+): 'title' | 'body' | undefined {
+  if (textMentionsArtist(title, artist)) {
+    return 'title';
+  }
+
+  if (textMentionsArtist(body, artist)) {
+    return 'body';
+  }
+
+  return undefined;
+}
+
+function createSnippet(text: string, artist: string, maxLength = 500): string {
+  const cleaned = text.replace(/\s+/g, ' ').trim();
+
+  if (cleaned.length <= maxLength) {
+    return cleaned;
+  }
+
+  const aliases = getArtistAliases(artist);
+  const lowerCleaned = cleaned.toLowerCase();
+
+  const matchIndex = aliases
+    .map((alias) => lowerCleaned.indexOf(alias.toLowerCase()))
+    .filter((index) => index >= 0)
+    .sort((a, b) => a - b)[0];
+
+  if (matchIndex === undefined) {
+    return `${cleaned.slice(0, maxLength)}...`;
+  }
+
+  const start = Math.max(0, matchIndex - 180);
+  const end = Math.min(cleaned.length, start + maxLength);
+
+  const prefix = start > 0 ? '...' : '';
+  const suffix = end < cleaned.length ? '...' : '';
+
+  return `${prefix}${cleaned.slice(start, end)}${suffix}`;
+}
+
+function toDateMs(createdAt?: string | number): number | undefined {
+  if (!createdAt) {
+    return undefined;
+  }
+
+  const date = new Date(createdAt);
+  const time = date.getTime();
+
+  return Number.isNaN(time) ? undefined : time;
+}
+
+function createLlmInput(results: RedditSearchResult[]): RedditLlmInputItem[] {
+  return results
+    .filter((result) => result.shouldAnalyzeSentiment)
+    .map((result) => ({
+      artist: result.artist,
+      subreddit: result.subreddit,
+      source: 'reddit',
+      type: result.type,
+      matchReason: result.matchReason,
+      evidenceStrength: result.evidenceStrength,
+      matchedAlias: result.matchedAlias,
+      matchedField: result.matchedField,
+      text: result.textSnippet,
+      redditScore: result.score,
+      redditCommentCount: result.numberOfComments,
+      createdAt: result.createdAt,
+      url: result.url,
+      postId: result.postId,
+      commentId: result.commentId,
+    }));
 }
 
 function textMentionsArtist(text: string, artist: string): boolean {
@@ -222,6 +337,10 @@ api.get('/search-artist', async (c) => {
         const postId = ensurePostId(String(post.id));
 
         if (postMatchesArtist) {
+          const matchedField = detectMatchedField(title, postBody, artist);
+          const matchedText =
+            matchedField === 'title' ? title : `${title}\n\n${postBody}`;
+        
           results.push({
             artist,
             subreddit: subredditName,
@@ -230,6 +349,9 @@ api.get('/search-artist', async (c) => {
             isDirectArtistMention: true,
             shouldAnalyzeSentiment: true,
             evidenceStrength: 'direct',
+            matchedAlias: findMatchedAlias(postText, artist),
+            matchedField,
+            textSnippet: createSnippet(matchedText, artist),
             title,
             body: postBody,
             score: post.score,
@@ -287,6 +409,11 @@ api.get('/search-artist', async (c) => {
               isDirectArtistMention,
               shouldAnalyzeSentiment,
               evidenceStrength,
+              matchedAlias: commentMatchesArtist
+                ? findMatchedAlias(commentBody, artist)
+                : undefined,
+              matchedField: commentMatchesArtist ? 'comment' : 'context',
+              textSnippet: createSnippet(commentBody, artist),
               title: `Comment on: ${title}`,
               body: commentBody,
               score: comment.score,
@@ -302,9 +429,50 @@ api.get('/search-artist', async (c) => {
     }
 
     const postCount = results.filter((result) => result.type === 'post').length;
+
     const commentCount = results.filter(
       (result) => result.type === 'comment'
     ).length;
+
+    const directEvidenceCount = results.filter(
+      (result) => result.evidenceStrength === 'direct'
+    ).length;
+
+    const contextEvidenceCount = results.filter(
+      (result) => result.evidenceStrength === 'context'
+    ).length;
+
+    const sentimentCandidateCount = results.filter(
+      (result) => result.shouldAnalyzeSentiment
+    ).length;
+
+    const subredditsWithMatches = Array.from(
+      new Set(results.map((result) => result.subreddit))
+    );
+
+    const timestamps = results
+      .map((result) => toDateMs(result.createdAt))
+      .filter((time): time is number => time !== undefined);
+
+    const newestPostDate =
+      timestamps.length > 0
+        ? new Date(Math.max(...timestamps)).toISOString()
+        : null;
+
+    const oldestPostDate =
+      timestamps.length > 0
+        ? new Date(Math.min(...timestamps)).toISOString()
+        : null;
+
+    const searchedTimeWindowDays =
+      timestamps.length > 0
+        ? Math.round(
+            (Math.max(...timestamps) - Math.min(...timestamps)) /
+              (1000 * 60 * 60 * 24)
+          )
+        : null;
+    
+    const llmInput = createLlmInput(results);
 
     return c.json({
       artist,
@@ -314,7 +482,15 @@ api.get('/search-artist', async (c) => {
       count: results.length,
       postCount,
       commentCount,
+      directEvidenceCount,
+      contextEvidenceCount,
+      sentimentCandidateCount,
+      subredditsWithMatches,
+      newestPostDate,
+      oldestPostDate,
+      searchedTimeWindowDays,
       aliasesUsed: getArtistAliases(artist),
+      llmInput,
       results,
     });
   } catch (error) {

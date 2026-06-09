@@ -27,8 +27,9 @@ type SearchArtistResponse = {
 
 export const Splash = () => {
   const [artist, setArtist] = useState<string>('KI/KI');
+  const [postLimit, setPostLimit] = useState('100');
   const [subreddits, setSubreddits] = useState<string>(
-    'Techno, ProperTechno, electronicmusic, aves, Amsterdam_rave, Berghain_Community'
+    'Techno, ProperTechno, electronicmusic, aves, Amsterdam_rave, Berghain_Community, Raves, ukrave'
   );
 
   const [result, setResult] = useState<SearchArtistResponse | null>(null);
@@ -57,6 +58,7 @@ export const Splash = () => {
       const params = new URLSearchParams({
         artist: cleanedArtist,
         subreddits: cleanedSubreddits,
+        postLimit,
       });
 
       const response = await fetch(`/api/search-artist?${params.toString()}`);
@@ -143,6 +145,19 @@ export const Splash = () => {
             value={subreddits}
             onChange={(event) => setSubreddits(event.target.value)}
             placeholder="Bijvoorbeeld: Techno, ProperTechno, electronicmusic, aves"
+          />
+        </label>
+
+        <label className="flex flex-col gap-2 text-sm font-medium text-gray-900 dark:text-gray-100">
+          Post limit per subreddit
+          <input
+            className="w-full border border-gray-300 rounded-lg px-3 py-2 text-gray-900 bg-white"
+            type="number"
+            min="1"
+            max="500"
+            value={postLimit}
+            onChange={(event) => setPostLimit(event.target.value)}
+            placeholder="Bijvoorbeeld: 100"
           />
         </label>
 
