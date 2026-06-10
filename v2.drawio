@@ -1,9 +1,114 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Pagina-1" id="EbsHlEUmd5C1XQdSKPcw">
-    <mxGraphModel>
+    <mxGraphModel dx="1999" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-3" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Data scources&lt;/font&gt;" vertex="1">
+          <mxGeometry height="50" width="430" x="120" y="40" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-5" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-2" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;div&gt;&lt;font style=&quot;font-size: 36px;&quot;&gt;Ingestion&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="430" x="120" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-13" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-12" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-4" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Normalization + Entity resolution&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="120" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Chartmetric&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;artist metrics,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;genres,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;followers,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;popularity,&amp;nbsp;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;socials&lt;/div&gt;" vertex="1">
+          <mxGeometry height="100" width="80" x="230" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Resident adivsor&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;bookings,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;events,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;lineups,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;venues,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;appearances&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;&lt;br&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="100" x="120" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-9" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Reddit scraper&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;mentions,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;sentiments,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;community buzz,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;hype&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="320" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;LOFI Airtable&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;bookings, fees&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;sales, events,&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;programmer notes&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&quot;ground truth of lofi&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="110" x="440" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: left;&quot;&gt;&lt;b&gt;Collecting data from:&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Chartmetric api&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;RA scraper&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Reddit scraper&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;Lofi airtable api&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="250" y="280" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-15" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-14" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-12" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Central Database&lt;/span&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;We will use SQLite&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;we reccomend PostreSQL for finalised development&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="440" x="120" y="650" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-31" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-33" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-14" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;font style=&quot;font-size: 36px;&quot;&gt;Core data structures&lt;/font&gt;" vertex="1">
+          <mxGeometry height="90" width="440" x="120" y="800" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-16" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Clean names&lt;div&gt;match aliases&lt;/div&gt;&lt;div&gt;assign ID&lt;/div&gt;&lt;div&gt;Link IDs from all data sources&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="170" x="250" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;artists&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;---------&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;artist_id&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;canonical_name&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;aliases&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;genre_primary&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;genre_secondary&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;country/city&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;chartmetric_id&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;ra_slug&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;spotify_id&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;instagram_handle&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;manager&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;agency&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;status&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="130" x="120" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;events&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;event_id&lt;/div&gt;&lt;div&gt;event_name&lt;/div&gt;&lt;div&gt;event_date&lt;/div&gt;&lt;div&gt;venue&lt;/div&gt;&lt;div&gt;event_type&lt;/div&gt;&lt;div&gt;genre_focus&lt;/div&gt;&lt;div&gt;capacity&lt;/div&gt;&lt;div&gt;tickets_sold&lt;/div&gt;&lt;div&gt;revenue&lt;/div&gt;&lt;div&gt;audience_feedback_score&lt;/div&gt;&lt;div&gt;creative_value_score&lt;/div&gt;&lt;div&gt;commercial_success_score&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="211" width="170" x="260" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;bookings&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;booking_id&lt;/div&gt;&lt;div&gt;event_id&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;fee&lt;/div&gt;&lt;div&gt;set_time&lt;/div&gt;&lt;div&gt;set_position&lt;/div&gt;&lt;div&gt;stage&lt;/div&gt;&lt;div&gt;billing_position&lt;/div&gt;&lt;div&gt;was_headliner&lt;/div&gt;&lt;div&gt;programmer_notes&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="191" width="120" x="440" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;lineups&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;lineup_id&lt;/div&gt;&lt;div&gt;event_id&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;lineup_order&lt;/div&gt;&lt;div&gt;source&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="121" width="80" x="570" y="912" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-24" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Sources:&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;Lofi/RA&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="630" x="120" y="1140" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-26" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Stat data structures&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="640" x="120" y="1200" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-27" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;artist_snapshots&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;snapshot_id&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;chartmetric_rank&lt;/div&gt;&lt;div&gt;chartmetric_score&lt;/div&gt;&lt;div&gt;spotify_followers&lt;/div&gt;&lt;div&gt;instagram_followers&lt;/div&gt;&lt;div&gt;monthly_listeners&lt;/div&gt;&lt;div&gt;ra_event_count&lt;/div&gt;&lt;div&gt;reddit_mentions&lt;/div&gt;&lt;div&gt;reddit_sentiment&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="130" x="220" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-28" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;artist_features&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;follower_growth_4w&lt;/div&gt;&lt;div&gt;follower_growth_12w&lt;/div&gt;&lt;div&gt;popularity_change_4w&lt;/div&gt;&lt;div&gt;ra_appearance_growth_12w&lt;/div&gt;&lt;div&gt;reddit_buzz_growth_4w&lt;/div&gt;&lt;div&gt;sentiment_change_4w&lt;/div&gt;&lt;div&gt;lofi_similarity_score&lt;/div&gt;&lt;div&gt;genre_peer_rank&lt;/div&gt;&lt;div&gt;fee_value_score&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="170" x="370" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;artist_scores&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;momentum_score&lt;/div&gt;&lt;div&gt;lofi_fit_score&lt;/div&gt;&lt;div&gt;risk_score&lt;/div&gt;&lt;div&gt;opportunity_score&lt;/div&gt;&lt;div&gt;anomaly_flag&lt;/div&gt;&lt;div&gt;xgboost_prediction&lt;/div&gt;&lt;div&gt;explanation&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="120" x="560" y="1260" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-30" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;font style=&quot;font-size: 11px;&quot;&gt;Sources:&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;CM/Reddit/RA&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="50" width="640" x="120" y="1500" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-38" edge="1" parent="1" source="IS1pQjUSRLfmHb4GL3-O-33" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="IS1pQjUSRLfmHb4GL3-O-37" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-33" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Feature engineering&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="640" x="120" y="1560" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-37" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;growth rates&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;rolling averages&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;genre-relative rankings&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;sentiment aggregation&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;similarity vectors&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;lineup compatibility vectors&lt;/div&gt;&lt;div style=&quot;text-align: justify;&quot;&gt;fee/value calculations&amp;nbsp;&amp;nbsp;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="120" width="190" x="345" y="1640" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-40" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Artist momentum/talentscout&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="378.75" x="-18.75" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-41" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Trend radar&lt;/span&gt;" vertex="1">
+          <mxGeometry height="50" width="222.5" x="370" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-42" parent="1" style="whiteSpace=wrap;html=1;rounded=0;" value="&lt;span style=&quot;font-size: 36px;&quot;&gt;Lineup fit/reccomender&lt;/span&gt;" vertex="1">
+          <mxGeometry height="100" width="340" x="600" y="1790" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-43" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;follower_growth_4w&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;follower_growth_12w&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;chartmetric_growth_4w&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;ra_event_growth_12w&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;reddit_mentions_growth_4w&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;reddit_sentiment_change&lt;/font&gt;&lt;/div&gt;&lt;div&gt;&lt;font size=&quot;3&quot;&gt;genre_peer_percentile&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="380" x="-20" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-44" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;artist_snapshots&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;snapshot_id&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;chartmetric_rank&lt;/div&gt;&lt;div&gt;chartmetric_score&lt;/div&gt;&lt;div&gt;spotify_followers&lt;/div&gt;&lt;div&gt;instagram_followers&lt;/div&gt;&lt;div&gt;monthly_listeners&lt;/div&gt;&lt;div&gt;ra_event_count&lt;/div&gt;&lt;div&gt;reddit_mentions&lt;/div&gt;&lt;div&gt;reddit_sentiment&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="220" x="370" y="1910" as="geometry" />
+        </mxCell>
+        <mxCell id="IS1pQjUSRLfmHb4GL3-O-45" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;div style=&quot;text-align: justify;&quot;&gt;&lt;div&gt;artist_snapshots&lt;/div&gt;&lt;div&gt;---------&lt;/div&gt;&lt;div&gt;snapshot_id&lt;/div&gt;&lt;div&gt;artist_id&lt;/div&gt;&lt;div&gt;date&lt;/div&gt;&lt;div&gt;chartmetric_rank&lt;/div&gt;&lt;div&gt;chartmetric_score&lt;/div&gt;&lt;div&gt;spotify_followers&lt;/div&gt;&lt;div&gt;instagram_followers&lt;/div&gt;&lt;div&gt;monthly_listeners&lt;/div&gt;&lt;div&gt;ra_event_count&lt;/div&gt;&lt;div&gt;reddit_mentions&lt;/div&gt;&lt;div&gt;reddit_sentiment&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="220" width="340" x="600" y="1910" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
