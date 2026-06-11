@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Pagina-1" id="noXttej1SAf8xjOeNVDw">
-    <mxGraphModel dx="1172" dy="628" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="803" dy="431" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -8,31 +8,67 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chartmetric data" vertex="1">
-          <mxGeometry height="60" width="120" x="300" y="50" as="geometry" />
+          <mxGeometry height="60" width="120" x="250" y="50" as="geometry" />
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-5" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-4" value="">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Model&quot;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;*Dit is hoe artiesten normaagesproken populair worden*&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="300" y="140" as="geometry" />
-        </mxCell>
-        <mxCell id="akCuC50f9PSZu7p6AyEB-9" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-6">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry height="80" width="120" x="250" y="150" as="geometry" />
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-11" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-8">
-          <mxGeometry relative="1" as="geometry" />
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="370" />
+              <mxPoint x="490" y="370" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Output:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voorbeelden van &quot;Road to succes&quot;&lt;/div&gt;" vertex="1">
-          <mxGeometry height="80" width="120" x="300" y="240" as="geometry" />
+          <mxGeometry height="80" width="120" x="250" y="250" as="geometry" />
         </mxCell>
-        <mxCell id="akCuC50f9PSZu7p6AyEB-10" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-8">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="akCuC50f9PSZu7p6AyEB-13" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="akCuC50f9PSZu7p6AyEB-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="490" y="310" />
+              <mxPoint x="490" y="310" />
+            </Array>
+          </mxGeometry>
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Andere dataflows:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RA/Partyflock/evt reddit etc&lt;/div&gt;" vertex="1">
-          <mxGeometry height="60" width="120" x="480" y="350" as="geometry" />
+          <mxGeometry height="60" width="120" x="440" y="250" as="geometry" />
         </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Talentscout output" vertex="1">
-          <mxGeometry height="60" width="120" x="300" y="450" as="geometry" />
+          <mxGeometry height="60" width="120" x="430" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-16" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-8">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="630" y="370" />
+              <mxPoint x="490" y="370" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Input Karel zelf" vertex="1">
+          <mxGeometry height="60" width="120" x="580" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-19" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-18" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Ground truth =&amp;nbsp;&lt;div&gt;lofi data&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="120" x="500" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-18" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="CM" vertex="1">
+          <mxGeometry height="60" width="120" x="660" y="60" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-20" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="Lofi match&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;" vertex="1">
+          <mxGeometry height="250" width="250" x="270" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-21" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Upcoming / momentum&lt;/span&gt;" vertex="1">
+          <mxGeometry height="250" width="250" x="440" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-23" parent="1" style="ellipse;whiteSpace=wrap;html=1;fillColor=none;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Similair artists&lt;/div&gt;" vertex="1">
+          <mxGeometry height="250" width="250" x="360" y="670" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
