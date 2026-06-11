@@ -22,10 +22,13 @@
         <mxCell id="akCuC50f9PSZu7p6AyEB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Output:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voorbeelden van &quot;Road to succes&quot;&lt;/div&gt;" vertex="1">
           <mxGeometry height="80" width="120" x="300" y="240" as="geometry" />
         </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-10" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="akCuC50f9PSZu7p6AyEB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Andere dataflows:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;RA/Partyflock/evt reddit etc&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="480" y="350" as="geometry" />
         </mxCell>
-        <mxCell id="akCuC50f9PSZu7p6AyEB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chartmetric data" vertex="1">
+        <mxCell id="akCuC50f9PSZu7p6AyEB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Output:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Talen&lt;/div&gt;" vertex="1">
           <mxGeometry height="60" width="120" x="300" y="450" as="geometry" />
         </mxCell>
       </root>
