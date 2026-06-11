@@ -1,11 +1,29 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Pagina-1" id="noXttej1SAf8xjOeNVDw">
-    <mxGraphModel dx="670" dy="359" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="970" dy="520" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="akCuC50f9PSZu7p6AyEB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
+        <mxCell id="akCuC50f9PSZu7p6AyEB-3" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chartmetric data" vertex="1">
           <mxGeometry height="60" width="120" x="300" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-5" edge="1" parent="1" source="akCuC50f9PSZu7p6AyEB-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" target="akCuC50f9PSZu7p6AyEB-4" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&quot;Model&quot;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;*Dit is hoe artiesten normaagesproken populair worden*&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="140" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Output:&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Voorbeelden van &quot;Road to succes&quot;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="80" width="120" x="300" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chartmetric data" vertex="1">
+          <mxGeometry height="60" width="120" x="480" y="350" as="geometry" />
+        </mxCell>
+        <mxCell id="akCuC50f9PSZu7p6AyEB-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Chartmetric data" vertex="1">
+          <mxGeometry height="60" width="120" x="300" y="410" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
